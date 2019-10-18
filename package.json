@@ -1,15 +1,23 @@
 {
-  "name": "minimal-css-reset",
-  "version": "1.0.0",
-  "description": "a minimal CSS Reset usable with Normalize.css",
-  "author": "Marco Trevisani <marco.trevisani81@gmail.com>",
-  "license": "Unlicense",
-  "repository": "trevonerd/minimal-css-reset",
-  "style": "reset.css",
-  "main": "reset.css",
-  "files": [
-    "reset.css",
-    "sass",
-    "less"
-  ]
+    "name": "minimal-css-reset",
+    "version": "1.1.0",
+    "description": "a minimal CSS Reset usable with Normalize.css",
+    "author": "Marco Trevisani <marco.trevisani81@gmail.com>",
+    "license": "Unlicense",
+    "repository": "trevonerd/minimal-css-reset",
+    "style": "reset.min.css",
+    "main": "reset.min.css",
+    "files": [
+        "reset.min.css",
+        "sass",
+        "less"
+    ],
+    "scripts": {
+        "minify": "postcss reset.css > reset.min.css",
+        "prepublishOnly": "npm run minify"
+    },
+    "devDependencies": {
+        "cssnano": "^4.1.10",
+        "postcss-cli": "^6.1.3"
+    }
 }

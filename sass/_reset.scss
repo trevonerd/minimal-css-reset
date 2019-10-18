@@ -4,18 +4,28 @@
     box-sizing: border-box;
 }
 
+body {
+    margin: 0;
+    min-height: 100vh;
+    scroll-behavior: smooth;
+    text-rendering: optimizeSpeed;
+    line-height: 1.5;
+}
+
 a {
     text-decoration: none;
+}
+
+a,
+button {
     color: inherit;
     cursor: pointer;
 }
 
 button {
     background-color: transparent;
-    color: inherit;
     border-width: 0;
     padding: 0;
-    cursor: pointer;
 }
 
 figure {
@@ -28,10 +38,18 @@ input::-moz-focus-inner {
     margin: 0;
 }
 
+button,
+input,
+select,
+textarea {
+    font: inherit;
+}
+
+dd,
+dl,
 menu,
-ul,
 ol,
-dd {
+ul {
     margin: 0;
     padding: 0;
     list-style: none;
@@ -61,17 +79,42 @@ fieldset {
 blockquote,
 q {
     quotes: none;
+    margin: 0;
 }
-
-blockquote:before,
 blockquote:after,
-q:before,
-q:after {
+blockquote:before,
+q:after,
+q:before {
     content: '';
     content: none;
+}
+
+img,
+video {
+    height: auto;
+    max-width: 100%;
+}
+
+iframe {
+    border: 0;
 }
 
 table {
     border-collapse: collapse;
     border-spacing: 0;
+}
+th {
+    font-weight: inherit;
+}
+td,
+th {
+    padding: 0;
+}
+
+@media (prefers-reduced-motion: reduce) {
+    * {
+        animation-play-state: paused !important;
+        transition: none !important;
+        scroll-behavior: auto !important;
+    }
 }

@@ -7,9 +7,9 @@ A minimal CSS reset usable with [Normalize.css](https://github.com/necolas/norma
 With curl:
 
 ```command
-$ curl -O "https://unpkg.com/minimal-css-reset@1.0.0/reset.css"
-$ curl -O "https://unpkg.com/minimal-css-reset@1.0.0/sass/_reset.scss"
-$ curl -O "https://unpkg.com/minimal-css-reset@1.0.0/less/reset.less"
+$ curl -O "https://unpkg.com/minimal-css-reset@1.1.0/reset.min.css"
+$ curl -O "https://unpkg.com/minimal-css-reset@1.1.0/sass/_reset.scss"
+$ curl -O "https://unpkg.com/minimal-css-reset@1.1.0/less/reset.less"
 ```
 
 With [NPM](http://npmjs.com):
@@ -61,6 +61,23 @@ Via Less:
 ```less
 @import '/path/to/minimal-css-reset/less/reset';
 ```
+
+## See in action 
+
+[CodePen](https://codepen.io/trevonerd/pen/bGGwxGG)
+
+## Changelog
+
+- removed body margin.
+- added body best practices 
+- added inputs fonts reset
+- fixed dl, dd reset
+- removed blockquote left margin
+- better image, video
+- removed iframe border
+- added th,td reset
+- remove animations and transitions for people that prefer not to see them
+- NEW minified version
 
 ----
 
