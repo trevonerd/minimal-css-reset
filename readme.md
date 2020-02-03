@@ -68,16 +68,20 @@ Via Less:
 
 ## Changelog
 
+v2.0.0
+- a with underline.
+
+v1.1.0
 - removed body margin.
-- added body best practices 
-- added inputs fonts reset
-- fixed dl, dd reset
-- removed blockquote left margin
-- better image, video
-- removed iframe border
-- added th,td reset
-- remove animations and transitions for people that prefer not to see them
-- NEW minified version
+- added body best practices.
+- added inputs fonts reset.
+- fixed dl, dd reset.
+- removed blockquote left margin.
+- better image, video.
+- removed iframe border.
+- added th,td reset.
+- remove animations and transitions for people that prefer not to see them.
+- NEW minified version.
 
 ----
 
